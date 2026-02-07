@@ -17,3 +17,35 @@ if (document.getElementById("offerForm")) {
     alert("Offer Added");
   };
 }
+// LOGIN SYSTEM
+if (document.getElementById("loginForm")) {
+  loginForm.onsubmit = function(e) {
+    e.preventDefault();
+
+    if (
+      email.value === "Weblixbzw@gmail.com" &&
+      password.value === "Arup@2004"
+    ) {
+      localStorage.setItem("isLoggedIn", "true");
+      window.location = "dashboard.html";
+    } else {
+      alert("Wrong Login");
+    }
+  };
+}
+// LOGIN SYSTEM
+if (document.getElementById("loginForm")) {
+  loginForm.onsubmit = function(e) {
+    e.preventDefault();
+
+    if (
+      email.value === "Weblixbzw@gmail.com" &&
+      password.value === "Arup@2004"
+    ) {
+      localStorage.setItem("isLoggedIn", "true");
+      window.location = "dashboard.html";
+    } else {
+      alert("Wrong Login");
+    }
+  };
+    }
